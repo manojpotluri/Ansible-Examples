@@ -3,6 +3,7 @@
 
 - name: run powershell
   hosts: '{{ target }}'
+  gather_facts: false
   tasks:
     - name: Run the powershell script 
       script: files/helloworld.ps1
