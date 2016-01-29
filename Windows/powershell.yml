@@ -1,0 +1,8 @@
+---
+# example playbook for running windows powershell script on target windows devices.
+
+- name: run powershell
+  hosts: all
+  tasks:
+    - name: Run the powershell script 
+      script: files/helloworld.ps1
